@@ -15,8 +15,9 @@ $(document).ready(function () {
     })
     $('.owl-prev').html("<i class=\"material-icons\">arrow_back_ios</i>");
     $('.owl-next').html("<i class=\"material-icons\">arrow_forward_ios</i>");
-    const xix = $('.main-content').position().top + $('.main-content').height() + 60;
-    console.log(xix);
+    var xix = $('.main-content').position().top + $('.main-content').height() + 60;
+if($(window).height()>1140)
+    xix+=100;
     $('.owl-carousel').css("top", xix + "px");
 
     var eqo = $('.t-rating');
@@ -32,8 +33,9 @@ $(document).ready(function () {
 });
 $(window).resize(function () {
 
-    const xix = $('.main-content').position().top + $('.main-content').height() + 60;
-    console.log(xix);
+    var xix = $('.main-content').position().top + $('.main-content').height() + 60;
+    if($(window).height()>1140)
+        xix+=100;
     $('.owl-carousel').css("top", xix + "px");
 
 

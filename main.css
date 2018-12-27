@@ -1,8 +1,15 @@
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 body{
     margin: 0px;
     height: 100%;
+    width:100%;
     font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 @font-face {
     font-family: nevix;
@@ -35,7 +42,7 @@ body{
 }
 .icons{
 left: 30px;
-    top: 47%;
+    top: 50%;
     transform: translateY(-50%);
 position: absolute;
 }
@@ -49,7 +56,7 @@ position: absolute;
 }
 .nav-links{
 right: 30px;
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
     position: absolute;
 
@@ -102,7 +109,7 @@ a{
     line-height: 43px;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.2em;
     color: white;
     letter-spacing: 2px;
     transition-duration: .4s;
@@ -203,8 +210,36 @@ a{
     font-style: italic;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+@media screen and (max-width: 650px) {
+
+    .main-logo{
+        height: 160px;
+    }
+    .button-first{
+        margin: 0px 0px 30px;
+        line-height: 53px !important;
+    }
+    .main-button{
+       width: 200px;
+        height: 60px;
+        line-height: 55px;
+        font-size: 1.2em;
+    }
+    .icons{
+        left: 15px;
+    }
+    .main-content{
+        top: 50%;
+    }
+    .owl-carousel{
+        display: none !important;
+    }
+}
+@media screen and (max-height: 750px) {
+    .owl-carousel{
+        display: none !important;
+    }
+    .main-content{
+        top: 50%;
     }
 }
