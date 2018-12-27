@@ -3,19 +3,70 @@
     <title>
         DIDA
     </title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
 </head>
 <body>
-
+<video autoplay muted loop id="myVideo">
+    <source src="bg.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
 <div class="nav-bar">
-    <i class="fab fa-apple"></i>
+    <div class="icons">
+        <span class="icon">
+            <i class="fab fa-facebook-square"></i>
+        </span>
+        <span class="icon">
+            <i class="fab fa-instagram"></i>
+        </span>
+    </div>
+    <div class="nav-links">
+        <a href="" class="link">Contact</a>
+        <a href="" class="link"> About</a>
+        <span class="link" style="color:darkgray"> Blog</span>
+    </div>
 </div>
 <div class="main-body">
+    <div class="main-content">
+        <img src="logo2.png" class="main-logo">
+        <div class="main-buttons">
+            <div class="main-button button-first">Request</div>
+            <div class="main-button">Gallery</div>
+        </div>
 
+    </div>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="testimonial">
+                <div class="t-photo" style="background:url(e.jpeg)"></div>
+                <div class="t-name"> Name<br><span class="t-title"> Title</span></div>
+                <div class="t-rating">3.5</div>
+                <div class="t-content">"Only a dream till it happens to you"</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="testimonial">
+                <div class="t-photo" style="background:url(e2.jpg)"></div>
+                <div class="t-name"> Name<br><span class="t-title"> Title</span></div>
+                <div class="t-rating">1</div>
+                <div class="t-content">"These things happen when its dark out"</div>
+            </div>
+        </div>
+
+    </div>
 </div>
 <div class="foot-bar">
-
 </div>
 </body>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="scripting.js"></script>
 </html>
