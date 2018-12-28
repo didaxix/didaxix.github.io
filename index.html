@@ -1,54 +1,70 @@
+<!-- Home page -->
 <html>
 <head>
     <title>
         DIDA
     </title>
+    <!-- FontAwesome icons CDN call -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Google fonts and icons CDN call -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Local owl carousel style sheets call -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <!-- JQuery Google CDN + local owl carousel script file call -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <!-- Display viewport initialization -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
 </head>
 <body>
+<!-- Home page background video (change source at bg.mp4)  -->
 <video autoplay muted loop id="myVideo">
     <source src="bg.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
+<!-- Navigation bar -->
 <div class="nav-bar">
+    <!-- To add new icons, copy paste icon class div in icons class contairner element, with new icon source code from fontawesome online library -->
     <div class="icons">
         <span class="icon">
+             <!-- Facebook icon -->
             <i class="fab fa-facebook-square"></i>
         </span>
         <span class="icon">
+             <!-- Instagram icon -->
             <i class="fab fa-instagram"></i>
         </span>
     </div>
+    <!-- Other page links, to add more anchor tag elements with class link to nav-links parent element -->
     <div class="nav-links">
         <a href="" class="link">Contact</a>
         <a href="" class="link"> About</a>
         <span class="link" style="color:darkgray"> Blog</span>
     </div>
 </div>
+<!-- Main body -->
 <div class="main-body">
+    <!-- Logo + main buttons -->
     <div class="main-content">
         <img src="logo2.png" class="main-logo">
         <div class="main-buttons">
             <div class="main-button button-first">Request</div>
             <div class="main-button">Gallery</div>
         </div>
-
     </div>
-
+    <!-- Testimonials slider, to add more testimonials copy paste entire div with class item in parent element with class owl-carousel -->
     <div class="owl-carousel owl-theme">
+        <!-- Testimonial object -->
         <div class="item">
             <div class="testimonial">
+                <!-- Change url in style attribute to change photo -->
                 <div class="t-photo" style="background:url(e.jpeg)"></div>
                 <div class="t-name"> Name<br><span class="t-title"> Title</span></div>
+                <!-- Only give a numeric value between 0 and 5 (any decimal value will be rounded to .5) -->
                 <div class="t-rating">3.5</div>
                 <div class="t-content">"Only a dream till it happens to you"</div>
             </div>
@@ -57,16 +73,18 @@
             <div class="testimonial">
                 <div class="t-photo" style="background:url(e2.jpg)"></div>
                 <div class="t-name"> Name<br><span class="t-title"> Title</span></div>
-                <div class="t-rating">1</div>
+                <div class="t-rating">5</div>
                 <div class="t-content">"These things happen when its dark out"</div>
             </div>
         </div>
-
     </div>
 </div>
+<!-- Footer element, currently not used but can be added later -->
 <div class="foot-bar">
 </div>
 </body>
+<!-- Custom local script and stylesheet libraries call -->
 <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="mobile.css">
 <script src="scripting.js"></script>
 </html>

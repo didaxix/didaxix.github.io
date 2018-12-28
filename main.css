@@ -1,51 +1,97 @@
-html{
+/* Main CSS3 style sheet */
+/* Window initialization for viewport and overflow rectifier*/
+html {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-body{
+/* Removes default margins from body's edges, also hides overflow */
+body {
     margin: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
 }
+*:focus{
+    outline: none;
+}
+
+/* Custom font face, called nevix, to change font replace with a .woff or .woff2 file in url */
 @font-face {
     font-family: nevix;
     src: url(font3.woff2);
 }
-.nav-bar{
+
+/* CSS for custom on-click ripple effect */
+.ripple {
+    height: 6px;
+    width: 6px;
+    background: white;
+    border-radius: 200px;
+    position: absolute;
+    transform-origin: center;
+    -webkit-animation-name: expand;
+    -moz-animation-name: expand;
+    -o-animation-name: expand;
+    animation-name: expand;
+    animation-fill-mode: forwards;
+    animation-duration: .35s;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+
+@keyframes expand {
+    from {
+        transform: scale(1);
+        opacity: .6;
+    }
+    to {
+        transform: scale(30);
+        opacity: 0;
+    }
+}
+
+/* Below are standard css classes and their respective property changes for styling the website */
+.nav-bar {
     width: 100%;
     height: 7%;
-    background-color: rgb(10,10,10);
+    background-color: rgb(10, 10, 10);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-.main-body{
+
+.main-body {
     width: 100%;
     height: 93%;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 
 }
-.foot-bar{
+
+.foot-bar {
     width: 100%;
     height: 0%;
-    background-color: rgb(10,10,10);
+    background-color: rgb(10, 10, 10);
 
 }
-.icon{
+
+.icon {
     color: white;
     font-size: 3.8vh;
     margin-right: 14px;
 }
-.icons{
-left: 30px;
+
+.icons {
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
-position: absolute;
+    position: absolute;
 }
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -54,49 +100,52 @@ position: absolute;
     min-height: 100%;
     z-index: -1;
 }
-.nav-links{
-right: 30px;
+
+.nav-links {
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
 
 }
-.link{
+
+.link {
     font-family: 'Lato', sans-serif;
     color: white;
     font-weight: 600;
     font-size: 1.8vh;
     letter-spacing: 2px;
     margin-left: 20px;
-
 }
-a{
+
+a {
     text-decoration: none;
 }
-.main-body{
+
+.main-body {
 
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-.main-logo{
+
+.main-logo {
     height: 200px;
     margin-bottom: 35px;
 }
 
-.main-content{
-    left:50%;
+.main-content {
+    left: 50%;
     top: 36%;
-    transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%, -50%, 0);
     position: absolute;
-
-
 }
-.main-buttons{
+
+.main-buttons {
     text-align: center;
-
 }
-.main-button{
+
+.main-button {
     display: inline-block;
     height: 50px;
     width: 160px;
@@ -114,64 +163,79 @@ a{
     letter-spacing: 2px;
     transition-duration: .4s;
 }
-.button-first{
+
+.button-first {
 
     margin-right: 15px;
     background-color: white;
-    color:black;
+    color: black;
 }
-.main-button:hover{
+
+.main-button:hover {
     background-color: white;
     transition-duration: .4s;
-    color:black;
+    color: black;
 }
+
 .button-first:hover {
     background-color: transparent;
     border: white solid 3px;
     color: white;
 }
-.item{
+
+.item {
     color: whitesmoke;
     text-align: center;
 }
-.owl-carousel{
+
+.owl-carousel {
     position: absolute;
 }
-.owl-nav{
+
+.owl-nav {
     height: 20px;
     margin: 0;
 }
-.owl-nav button{
+
+.owl-nav button {
     color: whitesmoke !important;
     opacity: 0.3;
+    z-index: 3;
 }
+
 .owl-nav button i {
     font-size: 42px !important;
 }
-.owl-nav button:focus{
+
+.owl-nav button:focus {
     outline: none;
 }
-.owl-nav button:hover{
+
+.owl-nav button:hover {
     background: none !important;
 
 }
-.owl-next{
-    transform: translate3d(400px,-120px,0);
+
+.owl-next {
+    transform: translate3d(400px, -120px, 0);
 }
-.owl-prev{
-    transform: translate3d(-400px,-120px,0);
+
+.owl-prev {
+    transform: translate3d(-400px, -120px, 0);
 }
-.testimonial{
+
+.testimonial {
     width: 500px;
     height: 150px;
     border-radius: 35px;
-    background-color: rgba(255,255,255,.75);
+    background-color: rgba(255, 255, 255, .75);
     display: inline-block;
     color: black;
     text-align: left;
     padding: 20px;
 }
-.t-photo{
+
+.t-photo {
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -181,65 +245,35 @@ a{
     background-position: center !important;
     background-size: cover !important;
 }
-.t-name{
+
+.t-name {
     font-weight: 600;
     display: inline-block;
     font-size: 1.1em;
     margin-top: 6px;
 }
-.t-title{
+
+.t-title {
     color: #595959;
     font-weight: 300;
     font-size: .85em;
     line-height: 30px;
 }
-.t-rating{
+
+.t-rating {
     display: inline-block;
     font-size: 20px;
-    float :right;
+    float: right;
     margin-right: 10px;
     letter-spacing: 8px;
     margin-top: 5px;
 }
-.t-content{
+
+.t-content {
     display: inline-block;
     width: 100%;
     margin-top: 20px;
     color: #3f3f3f;
     font-family: nevix;
     font-style: italic;
-}
-
-@media screen and (max-width: 650px) {
-
-    .main-logo{
-        height: 160px;
-    }
-    .button-first{
-        margin: 0px 0px 30px;
-        line-height: 53px !important;
-    }
-    .main-button{
-       width: 200px;
-        height: 60px;
-        line-height: 55px;
-        font-size: 1.2em;
-    }
-    .icons{
-        left: 15px;
-    }
-    .main-content{
-        top: 50%;
-    }
-    .owl-carousel{
-        display: none !important;
-    }
-}
-@media screen and (max-height: 750px) {
-    .owl-carousel{
-        display: none !important;
-    }
-    .main-content{
-        top: 50%;
-    }
 }
