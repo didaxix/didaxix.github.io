@@ -48,77 +48,99 @@
     </div>
 </div>
 <div class="gallery-title">Our previous works</div>
-<style type="text/css">
-    .parallaxParent {
-        height: 60vh;
-        overflow: hidden;
-        width: 80vw;
-        position: relative;
-        float: left;
-    }
-
-    .parallaxParent > div {
-        height: 200%;
-        position: relative;
-        top: -100%;
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-        filter: blur(6px);
-    }
-
-
-</style>
 <div class="gallery-contain">
     <section class="gallery-info">
         <h1>Amazing</h1>
         <p>Seems like once again you've had to greet me with goodbyes</p>
-        <span>Click to see images<br>
+        <span><em>Click to see images</em><br>
         <i class="material-icons">
             arrow_right_alt
         </i>
         </span>
     </section>
+    <div class="gallery-pictures">
+        <img src="z.jpg">
+        <img src="l.jpg">
+        <img src="n.jpg">
+        <img src="z.jpg">
+        <img src="n.jpg">
+
+    </div>
     <div id="parallax1" class="parallaxParent">
-        <h1>die</h1>
+        <h1>sharingan</h1>
         <div style="background-image: url(c1.jpg);"></div>
     </div>
 </div>
 
 <div class="gallery-contain">
     <div id="parallax2" class="parallaxParent">
-        <h1>for</h1>
+        <h1>Byakugan</h1>
         <div style="background-image: url(c2.jpg);"></div>
     </div>
-    <section class="gallery-info"></section>
+    <section class="gallery-info">
+        <h1>Amazing</h1>
+        <p>Seems like once again you've had to greet me with goodbyes</p>
+        <span><em>Click to see images</em><br>
+        <i class="material-icons">
+            arrow_right_alt
+        </i>
+        </span>
+    </section>
+    <div class="gallery-pictures">
+        <img src="z.jpg">
+    </div>
 </div>
 <div class="gallery-contain">
-    <section class="gallery-info"></section>
+    <section class="gallery-info">
+        <h1>Amazing</h1>
+        <p>Seems like once again you've had to greet me with goodbyes</p>
+        <span><em>Click to see images</em><br>
+        <i class="material-icons">
+            arrow_right_alt
+        </i>
+        </span>
+    </section>
+    <div class="gallery-pictures">
+        <img src="z.jpg">
+        <img src="n.jpg">
+        <img src="l.jpg">
+    </div>
     <div id="parallax3" class="parallaxParent">
-        <h1>you.</h1>
+        <h1>Rinnegan</h1>
         <div style="background-image: url(c3.jpg);"></div>
     </div>
 </div>
 
-
-<script>
-
-    var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
-
-    // build scenes
-    new ScrollMagic.Scene({triggerElement: "#parallax1"})
-        .setTween("#parallax1 > div", {y: "90%", ease: Linear.easeNone})
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#parallax2"})
-        .setTween("#parallax2 > div", {y: "90%", ease: Linear.easeNone})
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#parallax3"})
-        .setTween("#parallax3 > div", {y: "90%", ease: Linear.easeNone})
-        .addTo(controller);
-
-</script>
+<div class="gallery-contain">
+    <div id="parallax4" class="parallaxParent">
+        <h1>Tenseigan</h1>
+        <div style="background-image: url(c4.jpg);"></div>
+    </div>
+    <section class="gallery-info">
+        <h1>Amazing</h1>
+        <p>Seems like once again you've had to greet me with goodbyes Seems like once again you've had to greet me with
+            goodbyes Seems like once again you've had to greet me with goodbyes Seems like once again you've had to greet
+            me with goodbyes Seems like once again you've had to greet me with goodbyes
+            Seems like once again you've had to greet me with goodbyesSeems like once again you've had to greet me with
+            goodbyesSeems like once again you've had to greet me with goodbyesSeems like once again you've had to greet
+            me with goodbyesSeems like once again you've had to greet me with goodbyesSeems like once again you've had
+            to greet me with goodbyesSeems like once again you've had to greet me with goodbyesSeems like once again
+            you've had to greet me with goodbyes
+        </p>
+        <span><em>Click to see images</em><br>
+        <i class="material-icons">
+            arrow_right_alt
+        </i>
+        </span>
+    </section>
+    <div class="gallery-pictures">
+        <img src="z.jpg">
+        <img src="l.jpg"> <img src="z.jpg">
+        <img src="n.jpg">
+        <img src="l.jpg">
+        <img src="l.jpg">
+    </div>
+</div>
 
 
 </body>

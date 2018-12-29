@@ -16,6 +16,10 @@ body {
 }
 *:focus{
     outline: none;
+
+}
+*::selection{
+    background: none;
 }
 
 /* Custom font face, called nevix, to change font replace with a .woff or .woff2 file in url */
@@ -42,6 +46,8 @@ body {
     -moz-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+    z-index: 100;
+    pointer-events: none;
 }
 
 @keyframes expand {
@@ -302,8 +308,9 @@ a {
     height: 60vh;
     margin: 0;
     float: left;
+    background: white;
     position: relative;
-
+z-index: 10;
 
 }
 .gallery-contain{
@@ -311,6 +318,24 @@ a {
     display: inline-block;
     margin-bottom: 7vh;
 }
+.parallaxParent {
+    height: 60vh;
+    overflow: hidden;
+    width: 80vw;
+    position: relative;
+    float: left;
+}
+
+.parallaxParent > div {
+    height: 200%;
+    position: relative;
+    top: -100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -3;
+    filter: blur(6px);
+}
+
 .parallaxParent h1 {
     position: absolute;
     top: 50%;
@@ -326,6 +351,12 @@ a {
     margin: 0;
     letter-spacing: 20px;
     text-transform: capitalize;
+    z-index: -2;
+    transition-duration: .8s;
+}
+.black{
+    background: rgba(0,0,0,1) !important;
+    opacity: .5;
 }
 section{
     color: rgb(43, 43, 43);
@@ -357,10 +388,55 @@ section span{
 }
 section i{
     font-size: 3em !important;
+    transition-duration: .4s;
 }
-section span:hover{
+.swerve{
+    transform: rotate(180deg);
+
+}
+em{
+    transition-duration: .4s;
+}
+section p {
+    max-height: 60%;
+    overflow: scroll;
+}
+section span:hover i {
+    color: whitesmoke;
+    transition-duration: .4s;
+}
+section span:hover {
+    background: rgb(37, 37, 37);
+    transition-duration: .4s;
+    cursor: pointer;
+}
+section span:hover em{
+    color: whitesmoke;
+    transition-duration: .4s;
+}
+
+.active{
     background: rgb(37, 37, 37);
     color: whitesmoke;
     transition-duration: .4s;
-cursor: pointer;
+    cursor: pointer;
 }
+
+.gallery-pictures{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow-x: scroll;
+}
+.gallery-pictures img{
+    max-height: 40vh;
+    max-width: 20vw;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    transition-duration: .8s;
+
+    transition-timing-function: ease-in-out;
+}
+
