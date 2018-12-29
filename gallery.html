@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        DIDA
+    </title>
+    <meta name="author" content="Aparimeya Taneja">
+    <meta charset="UTF-8">
+    <!-- FontAwesome icons CDN call -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Google fonts and icons CDN call -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <!-- Local owl carousel style sheets call -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <!-- JQuery Google CDN + local owl carousel script file call -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <!-- Display viewport initialization -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js'></script>
+    <script src="https://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+<!-- Navigation bar -->
+<div class="nav-bar">
+    <!-- To add new icons, copy paste icon class div in icons class contairner element, with new icon source code from fontawesome online library -->
+    <div class="icons">
+        <span class="icon">
+             <!-- Facebook icon -->
+            <i class="fab fa-facebook-square"></i>
+        </span>
+        <span class="icon">
+             <!-- Instagram icon -->
+            <i class="fab fa-instagram"></i>
+        </span>
+    </div>
+    <!-- Other page links, to add more anchor tag elements with class link to nav-links parent element -->
+    <div class="nav-links">
+        <a href="" class="link">Contact</a>
+        <a href="" class="link"> About</a>
+        <span class="link" style="color:darkgray"> Blog</span>
+    </div>
+</div>
+<div class="gallery-title">Our previous works</div>
+<style type="text/css">
+    .parallaxParent {
+        height: 60vh;
+        overflow: hidden;
+        width: 80vw;
+        position: relative;
+        float: left;
+    }
+
+    .parallaxParent > div {
+        height: 200%;
+        position: relative;
+        top: -100%;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        filter: blur(6px);
+    }
+
+
+</style>
+<div class="gallery-contain">
+    <section class="gallery-info">
+        <h1>Amazing</h1>
+        <p>Seems like once again you've had to greet me with goodbyes</p>
+        <span>Click to see images<br>
+        <i class="material-icons">
+            arrow_right_alt
+        </i>
+        </span>
+    </section>
+    <div id="parallax1" class="parallaxParent">
+        <h1>die</h1>
+        <div style="background-image: url(c1.jpg);"></div>
+    </div>
+</div>
+
+<div class="gallery-contain">
+    <div id="parallax2" class="parallaxParent">
+        <h1>for</h1>
+        <div style="background-image: url(c2.jpg);"></div>
+    </div>
+    <section class="gallery-info"></section>
+</div>
+<div class="gallery-contain">
+    <section class="gallery-info"></section>
+    <div id="parallax3" class="parallaxParent">
+        <h1>you.</h1>
+        <div style="background-image: url(c3.jpg);"></div>
+    </div>
+</div>
+
+
+<script>
+
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+    // build scenes
+    new ScrollMagic.Scene({triggerElement: "#parallax1"})
+        .setTween("#parallax1 > div", {y: "90%", ease: Linear.easeNone})
+        .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#parallax2"})
+        .setTween("#parallax2 > div", {y: "90%", ease: Linear.easeNone})
+        .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#parallax3"})
+        .setTween("#parallax3 > div", {y: "90%", ease: Linear.easeNone})
+        .addTo(controller);
+
+</script>
+
+
+</body>
+<!-- Custom local script and stylesheet libraries call -->
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="mobile.css">
+<script src="scripting.js"></script>
+</html>

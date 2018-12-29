@@ -1,7 +1,8 @@
 //Main JavaScript File
 //Testimonials slider settings config (refer to owl carousel documentation online to make changes
-$(document).ready(function () {
 
+
+$(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -21,10 +22,12 @@ $(document).ready(function () {
     $('.owl-next').html("<i class=\"material-icons\">arrow_forward_ios</i>");
 
 //Testimonial slider height rectifier
-    var xix = $('.main-content').position().top + $('.main-content').height() + 60;
-    if ($(window).height() > 1140)
-        xix += 100;
-    $('.owl-carousel').css("top", xix + "px");
+    if(document.location.pathname.match(/[^\/]+$/)[0]=="index.html") {
+        var xix = $('.main-content').position().top + $('.main-content').height() + 60;
+        if ($(window).height() > 1140)
+            xix += 100;
+        $('.owl-carousel').css("top", xix + "px");
+    }
 
 //Rating custom auto-star generator
     var eqo = $('.t-rating');
@@ -51,8 +54,10 @@ $(document).ready(function () {
 
 //Testimonial slider height rectifier on window resize
 $(window).resize(function () {
-    var xix = $('.main-content').position().top + $('.main-content').height() + 60;
-    if ($(window).height() > 1140)
-        xix += 100;
-    $('.owl-carousel').css("top", xix + "px");
+    if(document.location.pathname.match(/[^\/]+$/)[0]=="index.html") {
+        var xix = $('.main-content').position().top + $('.main-content').height() + 60;
+        if ($(window).height() > 1140)
+            xix += 100;
+        $('.owl-carousel').css("top", xix + "px");
+    }
 });
