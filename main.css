@@ -11,7 +11,7 @@ body {
     margin: 0px;
     height: 100%;
     width: 100%;
-    font-family: nevix;
+    font-family: nevix, sans-serif;
 
 }
 *:focus{
@@ -347,7 +347,7 @@ z-index: 10;
     animation-name: semtex;
     animation-timing-function: ease-in-out;
     animation-duration: .5s;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;

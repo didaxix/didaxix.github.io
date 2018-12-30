@@ -21,26 +21,27 @@
     <script src="owl.carousel.min.js"></script>
     <!-- Display viewport initialization -->
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!-- ScrollMagic plugin CDN and GSAP plugin CDN calls -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js'></script>
     <script src="https://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
     <script src="https://scrollmagic.io/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-    <!-- Compiled and minified CSS -->
+    <!-- Materialize CSS and script CDN call-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
 <body>
+<!-- Pre loader -->
 <div class="pre-load">
     <div class="progress">
         <div class="indeterminate"></div>
     </div>
 </div>
+
 <!-- Navigation bar -->
 <div class="nav-bar">
-    <!-- To add new icons, copy paste icon class div in icons class contairner element, with new icon source code from fontawesome online library -->
+    <!-- To add new icons, copy paste icon class div in icons class element, with new icon source code (<i> tag) from
+     fontawesome online library -->
     <div class="icons">
         <span class="icon">
              <!-- Facebook icon -->
@@ -58,36 +59,51 @@
         <span class="link" style="color:darkgray"> Blog</span>
     </div>
 </div>
+<!-- On-click full screen image view -->
 <div class="image-focus">
     <img src="" class="image-focused">
 </div>
 
-
+<!-- Page title -->
 <div class="gallery-title">Our previous works</div>
+
+<!-- A project card, containing all images, info, parallax etc. To add a new project, copy past gallery-contain div
+after the previous one, but make sure to alternate between left and right info panel ones. Also make sure for every
+card to update id of element with class parallaxParent to parallax(n), where n is the number of the card. Also
+add parallax controller for the same in scripting.js file in the magicScroll section.   -->
 <div class="gallery-contain">
+    <!-- Side information panel -->
     <section class="gallery-info">
+        <!-- Head title -->
         <h1>Amazing</h1>
+        <!-- Description -->
         <p>Seems like once again you've had to greet me with goodbyes</p>
+        <!-- Image gallery button -->
         <span><em>Click to see images</em><br>
-        <i class="material-icons">
+            <i class="material-icons">
             arrow_right_alt
-        </i>
+            </i>
         </span>
     </section>
+    <!-- Container for gallery pictures, to add more pictures just add an img tag element in gallery-pictures class div
+     and specify source in src-->
     <div class="gallery-pictures">
         <img src="z.jpg">
         <img src="l.jpg">
         <img src="n.jpg">
         <img src="z.jpg">
         <img src="n.jpg">
-
     </div>
+    <!-- Background image parallax -->
     <div id="parallax1" class="parallaxParent">
+        <!-- Title -->
         <h1>sharingan</h1>
+        <!-- To change image, specify image source in url() -->
         <div style="background-image: url(c1.jpg);"></div>
     </div>
 </div>
-
+<!-- Same project card, but now is right oriented (Parallax background before info). Make sure all even numbered cards
+ are right oriented, and odd ones are left like here.-->
 <div class="gallery-contain">
     <div id="parallax2" class="parallaxParent">
         <h1>Byakugan</h1>
@@ -152,7 +168,8 @@
     </section>
     <div class="gallery-pictures">
         <img src="z.jpg">
-        <img src="l.jpg"> <img src="z.jpg">
+        <img src="l.jpg">
+        <img src="z.jpg">
         <img src="n.jpg">
         <img src="l.jpg">
         <img src="l.jpg">
