@@ -32,7 +32,7 @@ body {
 .ripple {
     height: 6px;
     width: 6px;
-    background: white;
+    background: #eaeaea;
     border-radius: 200px;
     position: absolute;
     transform-origin: center;
@@ -298,6 +298,29 @@ a {
     font-size: 3.4em;
     margin-top: 7vh;
     position: relative;
+   opacity: 0;
+    -webkit-animation-name: semtex;
+    -moz-animation-name: semtex;
+    -o-animation-name: semtex;
+    animation-name: semtex;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-delay: 1.8s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes semtex {
+    from{
+        opacity: 0;
+        transform: translate3d(0,15px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0px,0);
+    }
+
 }
 .gallery-info {
     border: rgb(37, 37, 37) solid 10px;
@@ -316,14 +339,31 @@ z-index: 10;
 .gallery-contain{
     position: relative;
     display: inline-block;
+    opacity: 0;
     margin-bottom: 7vh;
+    -webkit-animation-name: semtex;
+    -moz-animation-name: semtex;
+    -o-animation-name: semtex;
+    animation-name: semtex;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
+.gallery-contain:last-of-type{
+    margin-bottom: 0px;
+}
+
 .parallaxParent {
     height: 60vh;
     overflow: hidden;
     width: 80vw;
     position: relative;
     float: left;
+
 }
 
 .parallaxParent > div {
@@ -439,4 +479,67 @@ section span:hover em{
 
     transition-timing-function: ease-in-out;
 }
+.gallery-pictures img:hover{
+    cursor: pointer;
 
+}
+
+.focusmist{
+transform: scale(3);
+}
+.image-focus{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+    display: none;
+    top: 0px;
+}
+.image-focused{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    max-width: 80vw;
+    max-height: 80vh;
+    opacity: 0;
+    transition-duration: .6s;
+}
+.reveal{
+    opacity: 1;
+    top: 50%;
+    transition-duration: .6s;
+}
+p::selection{
+    background-color: black;
+    color: white;
+}
+.pre-load{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 120;
+    background: black;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+.progress{
+    top:50%;
+    width: 90%;
+    left: 5%;
+    background: whitesmoke;
+}
+.indeterminate{
+    background-color: black !important;
+}
+.loaded{
+    opacity: 0;
+    transition-duration: .7s;
+}
