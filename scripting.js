@@ -66,7 +66,7 @@ $(document).ready(function () {
         $('.owl-next').html("<i class=\"material-icons\">arrow_forward_ios</i>");
 
     //Testimonial slider height rectifier
-       
+
             var xix = $('.main-content').position().top + $('.main-content').height() + 60;
             if ($(window).height() > 1140)
                 xix += 100;
