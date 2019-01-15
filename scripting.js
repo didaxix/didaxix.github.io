@@ -66,7 +66,7 @@ $(document).ready(function () {
         $('.owl-next').html("<i class=\"material-icons\">arrow_forward_ios</i>");
 
     //Testimonial slider height rectifier
-        if (document.location.pathname.match(/[^\/]+$/)[0] == "index.html") {
+    if ($(document).find('title').text() == "home")  {
             var xix = $('.main-content').position().top + $('.main-content').height() + 60;
             if ($(window).height() > 1140)
                 xix += 100;
@@ -157,7 +157,7 @@ function rectifier(agilities) {
 $(window).resize(function () {
 
     //Testimonial slider height rectifier on window resize
-    if (document.location.pathname.match(/[^\/]+$/)[0] == "index.html") {
+    if ($(document).find("title").text() == "home") {
         var xix = $('.main-content').position().top + $('.main-content').height() + 60;
         if ($(window).height() > 1140)
             xix += 100;
