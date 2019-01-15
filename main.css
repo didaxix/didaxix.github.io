@@ -374,6 +374,8 @@ z-index: 10;
     background-position: center;
     z-index: -3;
     filter: blur(6px);
+
+
 }
 
 .parallaxParent h1 {
@@ -397,6 +399,7 @@ z-index: 10;
 .black{
     background: rgba(0,0,0,1) !important;
     opacity: .5;
+
 }
 section{
     color: rgb(43, 43, 43);
@@ -542,4 +545,7 @@ p::selection{
 .loaded{
     opacity: 0;
     transition-duration: .7s;
+}
+.owl-item {
+    background-color:rgba(0,0,0,0) !important;
 }

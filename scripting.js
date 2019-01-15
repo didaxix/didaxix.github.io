@@ -34,11 +34,6 @@ var agilities = new Array($('.gallery-contain').length).fill(0);
 //Main JQuery
 $(document).ready(function () {
 
-    //Removes pre-loader once page is fully loaded
-    $('.pre-load').toggleClass("loaded");
-   setTimeout(function () {
-       $('.pre-load').hide(0);
-   },1500);
 
     //Initializes all images for project cards
     for (var mgk = 0; mgk < $('.gallery-pictures').length; mgk++) {
@@ -58,7 +53,7 @@ $(document).ready(function () {
             nav: true,
             autoplay: true,
             autoplayHoverPause: true,
-            autoplayTimeout: 15000,
+            autoplayTimeout: 10000,
             responsive: {
                 0: {
                     items: 1
@@ -108,6 +103,7 @@ $(document).ready(function () {
         var xqc = $('.gallery-info').width() + 75;
         var iddqd = $('section span').index(this);
         $('.parallaxParent h1').eq(iddqd).toggleClass("black");
+
         var soon = $('.gallery-pictures:eq(' + iddqd + ')').children();
         var ksi = "";
         if (iddqd % 2 == 1)
@@ -127,6 +123,15 @@ $(document).ready(function () {
         else
             agilities[iddqd] = 0;
     });
+
+
+    //Removes pre-loader once page is fully loaded
+    $('.pre-load').toggleClass("loaded");
+    setTimeout(function () {
+        $('.pre-load').hide(0);
+    },1500);
+
+
 });
 
 //Custom on re-size gallery extension rectifier function
