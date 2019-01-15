@@ -66,12 +66,12 @@ $(document).ready(function () {
         $('.owl-next').html("<i class=\"material-icons\">arrow_forward_ios</i>");
 
     //Testimonial slider height rectifier
-
+        if (document.location.pathname.match(/[^\/]+$/)[0] == "index.html") {
             var xix = $('.main-content').position().top + $('.main-content').height() + 60;
             if ($(window).height() > 1140)
                 xix += 100;
             $('.owl-carousel').css("top", xix + "px");
-
+        }
 
     //Rating custom auto-star generator
         var eqo = $('.t-rating');
@@ -157,12 +157,12 @@ function rectifier(agilities) {
 $(window).resize(function () {
 
     //Testimonial slider height rectifier on window resize
-
+    if (document.location.pathname.match(/[^\/]+$/)[0] == "index.html") {
         var xix = $('.main-content').position().top + $('.main-content').height() + 60;
         if ($(window).height() > 1140)
             xix += 100;
         $('.owl-carousel').css("top", xix + "px");
-
+    }
 
     //Gallery images extension rectifier call
     setTimeout(rectifier, 500, agilities);
