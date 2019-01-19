@@ -33,7 +33,10 @@ var agilities = new Array($('.gallery-contain').length).fill(0);
 
 //Main JQuery
 $(document).ready(function () {
-
+$('.menu').click(function () {
+   $(this).toggleClass('active');
+   $('.nav-hidden').toggleClass('drop');
+});
 
     //Initializes all images for project cards
     for (var mgk = 0; mgk < $('.gallery-pictures').length; mgk++) {
@@ -66,11 +69,12 @@ $(document).ready(function () {
         $('.owl-next').html("<i class=\"material-icons\">arrow_forward_ios</i>");
 
     //Testimonial slider height rectifier
-    if ($(document).find('title').text() == "home")  {
+    if ($(document).find('title').text() == "DIDA home")  {
             var xix = $('.main-content').position().top + $('.main-content').height() + 60;
             if ($(window).height() > 1140)
                 xix += 100;
             $('.owl-carousel').css("top", xix + "px");
+
         }
 
     //Rating custom auto-star generator
@@ -98,7 +102,7 @@ $(document).ready(function () {
 
     //Custom on click gallery extension
     $('section span').click(function () {
-        $(this).toggleClass("active");
+        $(this).toggleClass("activated");
         $(this).find('i').toggleClass("swerve");
         var xqc = $('.gallery-info').width() + 75;
         var iddqd = $('section span').index(this);
@@ -157,7 +161,7 @@ function rectifier(agilities) {
 $(window).resize(function () {
 
     //Testimonial slider height rectifier on window resize
-    if ($(document).find("title").text() == "home") {
+    if ($(document).find("title").text() == "DIDA home") {
         var xix = $('.main-content').position().top + $('.main-content').height() + 60;
         if ($(window).height() > 1140)
             xix += 100;
