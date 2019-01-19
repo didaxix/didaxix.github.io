@@ -4,7 +4,7 @@
     <list default="true" id="7acb6556-97aa-4866-8365-c7609f181b73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clout.png" beforeDir="false" afterPath="$PROJECT_DIR$/clout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,16 +43,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="5217" />
-          <entry key="html" value="4438" />
+          <entry key="css" value="5245" />
+          <entry key="html" value="4441" />
           <entry key="js" value="4520" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="5217" />
-          <entry key="HTML" value="4438" />
+          <entry key="CSS" value="5245" />
+          <entry key="HTML" value="4441" />
           <entry key="JavaScript" value="4520" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -97,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripting.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
@@ -112,17 +112,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-89">
-              <caret line="818" selection-start-line="818" selection-end-line="820" selection-end-column="26" />
+            <state relative-caret-position="751">
+              <caret line="928" selection-start-line="928" selection-end-line="928" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" selection-end-column="36" />
+            <state relative-caret-position="390">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -180,9 +180,9 @@
         <option value="$PROJECT_DIR$/scripting.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/gallery.html" />
-        <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/mobile.css" />
         <option value="$PROJECT_DIR$/404.html" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -254,7 +254,7 @@
       <workItem from="1545658684671" duration="26955000" />
       <workItem from="1546011499069" duration="47645000" />
       <workItem from="1547150760397" duration="663000" />
-      <workItem from="1547506861466" duration="13146000" />
+      <workItem from="1547506861466" duration="13446000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1545658038240</created>
@@ -267,7 +267,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88556000" />
+    <option name="totallyTimeSpent" value="88856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -356,20 +356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="818" selection-start-line="818" selection-end-line="820" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripting.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -377,6 +363,20 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="928" selection-start-line="928" selection-end-line="928" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
         </state>
       </provider>
     </entry>
