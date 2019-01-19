@@ -74,8 +74,11 @@
 section span{
     display: none;
 }
+    .error-back {
+        background-size: 200px
+    }
 
-}
+    }
 @media screen and (max-height: 750px) {
     section h1{
         font-size: 1.5em;
