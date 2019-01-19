@@ -84,7 +84,7 @@ body {
 .main-body {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     position: fixed;
 
@@ -304,7 +304,7 @@ a {
     font-weight: 600;
     line-height: 230px;
     font-size: 3.4em;
-    margin-top: 1vh;
+    margin-top: 65px;
     position: relative;
     opacity: 0;
     -webkit-animation-name: semtex;
@@ -612,7 +612,7 @@ p::selection {
 }
 
 html {
-    padding-top: 50px;
+
     font-family: 'Raleway', Helvetica, arial, sans-serif;
     text-align: center;
     background-color: #eeeeee;
@@ -814,4 +814,116 @@ a {
 .drop{
     top: 65px;
     transition: .5s  ease-in-out;
+}
+
+.error-back{
+    background: url("clout.png");
+    background-size:400px ;
+    background-position: center;
+}
+
+.box-outer {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
+    height: 200px;
+}
+.main_box {
+    width: 300px;
+    height: 200px;
+    position: relative;
+
+    border: 5px solid rgba(0,0,0,0);
+}
+.bar {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: #fff;
+    transition: all 1s linear;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+}
+.bar.delay {
+    animation-delay: 0.55s;
+    -webkit-animation-delay: 0.55s;
+}
+.top {
+    top: -5px;
+    left: -5px;
+    background: #bf1408;
+}
+.right {
+    top: 18px;
+    right: -28px;
+    transform: rotate(90deg);
+    background: #bf1408;
+    animation-delay: .2s;
+}
+.bottom {
+    bottom: -5px;
+    left: -5px;
+    animation-delay: .2s;
+}
+.left {
+    top: 18px;
+    left: -28px;
+    transform: rotate(90deg);
+}
+@-webkit-keyframes h-move {
+    0% {
+        left: -5px;
+    }
+    100% {
+        left: 300px;
+    }
+}
+@keyframes h-move {
+    0% {
+        left: -5px;
+    }
+    100% {
+        left: 300px;
+    }
+}
+.top, .bottom {
+    -webkit-animation-name: h-move;
+    animation-name: h-move;
+}
+@-webkit-keyframes v-move {
+    0% {
+        top: -5px;
+    }
+    100% {
+        top:228px;
+    }
+}
+@keyframes v-move {
+    0% {
+        top: -5px;
+    }
+    100% {
+        top:228px;
+    }
+}
+.right, .left {
+    -webkit-animation-name: v-move;
+    animation-name: v-move;
+}
+.error-message{
+    font-size: 66px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #FFFFFF;
 }
