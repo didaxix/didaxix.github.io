@@ -8,9 +8,9 @@ html {
 
 /* Removes default margins from body's edges, also hides overflow */
 body {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
+    /* margin: 0px; */
+    /* height: 100%; */
+    /* width: 100%; */
     font-family: nevix, sans-serif;
 
 }
@@ -27,6 +27,13 @@ body {
 
 *::selection {
     background: none;
+}
+
+.headshot:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
+
 }
 
 /* Custom font face, called nevix, to change font replace with a .woff or .woff2 file in url */
