@@ -148,7 +148,12 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
+
+}
+a:hover{
+    text-decoration: none !important;
+    color: whitesmoke;
 }
 
 .main-body {
@@ -352,7 +357,8 @@ a {
     height: 60vh;
     margin: 0;
     float: left;
-    background: white;
+    background: rgb(37, 37, 37);
+    color: white;
     position: relative;
     z-index: 10;
 
@@ -440,11 +446,11 @@ section h1 {
 section p {
     padding-left: 25px;
     padding-right: 25px;
-    font-size: 1.12em;
+    font-size: 1.2em;
 }
 
 section span {
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     transform: translate3d(-50%, 0, 0);
     text-align: center;
@@ -452,9 +458,11 @@ section span {
     position: absolute;
     transition-duration: .4s;
     color: rgba(179, 175, 179, 0.5);
-    width: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
     background: #4c4b4f;
-    padding-top: 15px;
+    padding: 6px;
 }
 
 section i {
@@ -815,12 +823,13 @@ a {
 
 .nav-hidden {
     width: 100vw;
-    height: 40px;
+    height: 50px;
     background: black;
     position: fixed;
     top: 10px;
     z-index: 9;
     transition: .5s  ease-in-out;
+
 }
 .drop{
     top: 65px;
