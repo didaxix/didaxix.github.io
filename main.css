@@ -30,7 +30,7 @@ body {
 }
 
 .headshot{
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.3s cubic-bezier(.25,.25,.25,1);
 }
 
 .headshot:hover {
@@ -392,6 +392,10 @@ a:hover{
     width: 80vw;
     position: relative;
     float: left;
+    -webkit-box-shadow: inset 0px 0px 0px 19px rgba(37,37,37,1);
+-moz-box-shadow: inset 0px 0px 0px 19px rgba(37,37,37,1);
+box-shadow: inset 0px 0px 0px 19px rgba(37,37,37,1);
+
 
 }
 
